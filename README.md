@@ -9,10 +9,10 @@ Make subnotes and include them faster
 
 - Be aware that each title is a delimiter for the script, it means that, if you have a structure like :
 ——————
-## Title
+Title
 Some text here
 
-## Another title
+Another title
 Another text
 ——————
 Then it will create 2 different subnotes.
