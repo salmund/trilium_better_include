@@ -1,7 +1,7 @@
 # trilium_better_include
 *Make subnotes and include them faster*
 
-The purpose of this script is to divide our note - which can be seen as a molecule - into several atoms that we can reuse in other contexts later.
+The purpose of this script is to divide faster and easier our note - which can be seen as a molecule - into several atoms that we can reuse in other contexts later ; all this while keeping the references to the atoms in the original molecule note.
 
 ## How to use the script
 
