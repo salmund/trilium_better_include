@@ -1,5 +1,15 @@
 
-/* HOW TO USE THIS SCRIPT
+/* 
+
+HOW TO INSTALL THE SCRIPT
+
+1. Import better_include.js in Trilium with import function
+
+2. In Menu < Configure Launchbar, right click on "Available Launcher" or "Visible launcher" tree and add a script launcher.
+
+3. Set the "Script" relation to better_include.js and configure a keyboard shortcut. 
+
+HOW TO USE THIS SCRIPT
 
 1. Go into a text note
 
@@ -45,12 +55,7 @@ Quand on sait ce qu'on doit faire dans l'ordre exact, c'est beaucoup plus simple
 */
 
 
-api.addButtonToToolbar({
-    title: 'Better Include',
-    icon: 'calendar-star',
-    shortcut: 'alt+w',
-    action: async function() {
-        function scrapeHtml(html) {
+function scrapeHtml(html) {
   const regex = /<(h[1-6])>(.+?)<\/\1>\s*([\s\S]+?)(?=<h[1-6]>|$)/g;
   const matches = {};
   let match;
@@ -109,7 +114,5 @@ api.addButtonToToolbar({
             })
             }
         api.showMessage("Created " + Object.keys(obj).length + " subnote" + (Object.keys(obj).length < 2 ? "" : "s"));
-        }        
-    }
-   
-});
+        }
+;
